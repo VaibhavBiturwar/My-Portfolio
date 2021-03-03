@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="./images/logo.png">
+
+    
+    <!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+    <!-- HEADER -->
+
+    <header class="site sticky-top">
+        <div class="site-header ">
+
+                <nav class="  navbar navbar-expand-lg ">
+                    <a class="navbar-brand roboto-font"  href="#">My Portfolio</a>
+                    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse roboto-font" id="navbarNav">
+                        <div class="mr-auto"></div>
+                      <ul class="navbar-nav" style="font-size: large;">
+                        <li class="nav-item" >
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#technologies">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#myfooter">Social</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </nav>
+
+
+        </div>
+
+    </header>
+
+    <!-- WELCOME -->
+
+    <div class="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 " style="padding-top: 10rem;">
+                    <h1 class="roboto-font" style="font-size: 4rem;color: #854fee;">Hey!</h1>
+                    <h2 class="roboto-font" style="font-size: 3rem;">I am Vaibhav Biturwar</h2>
+                    <h6 class="roboto-font" style="font-size: 1rem;">A Computer Science graduate, Looking forward to build a career in the Development Industry.</h4>
+                      <a href="./resume.html">
+                        <button class="btn button-resume roboto-font" type="button" >
+                          Resume
+                        </button>
+                      </a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="./images/emoji1.png" alt="welcome" class="img-fluid welcome-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <!-- TECHNOOGIES -->
+    <div id="technologies" style="width: auto; height: 2rem;"></div>  <!--Filler-->
+
+    <div class="technologies col-lg-10" >
+      <div class="container" >
+       
+        <h1 class="roboto-font text-center">Technologies Known</h1>
+
+
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Card ! -->
+          <div class="card  mb-4 tech_card" >
+            <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
+              <p class="card-text "> Android Development (Flutter) </p>
+            </div>
+          </div>
+          
+           <!-- Card 2 -->
+           <div class="card  tech_card mb-4" >
+            <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
+              <p class="card-text "> Python Development </p>
+            </div>
+          </div>
+
+           <!-- Card 3 -->
+           <div class="card tech_card mb-4" >
+            <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
+              <p class="card-text "> Core Java (J2SE) </p>
+            </div>
+          </div>
+
+          </div>
+
+
+        <!-- Row 2 -->
+          <div class="row">
+            <!-- Card ! -->
+            <div class="card  mb-4 tech_card" >
+              <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
+                <p class="card-text "> Android Development (Flutter) </p>
+              </div>
+            </div>
+            
+             <!-- Card 2 -->
+             <div class="card  tech_card mb-4" >
+              <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
+                <p class="card-text "> Python Development </p>
+              </div>
+            </div>
+  
+             <!-- Card 3 -->
+             <div class="card tech_card mb-4" >
+              <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
+                <p class="card-text "> Core Java (J2SE) </p>
+              </div>
+            </div>
+  
+            </div>
+
+        </div>
+      </div>
+    <!-- DIV MISSING -->
+    
+    
+    <!-- Projects -->
+      <div class="projects col-lg-10" id="projects">
+        <div class="container">
+       
+          <div class="accordion" id="accordionExample">
+
+            <!-- Project 1 -->
+            <div class="card">
+              <div class="card-header" id="headingOne"> 
+                
+                  <button class="btn btn-outline-light project-btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    FastGate System
+                  </button>
+                
+              </div>
+          <!-- Description -->
+              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body project-desc">
+                  <div class="proj-mentor" >Mentor: Mr. Gurudatta Verma | Team Size: 2</div>
+                  <div class="proj-mentor" >Key Skills: Python | OpenCV | MySQL | Fast2SMS API</div><hr>
+                  A gate assist system that helps to automate the vehicle registration at enternace of the socitey. It captures the license plate of the vehicle and inform
+                  the resident about the vehicle approaching them</div>
+              </div>
+            
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo"> 
+                
+                  <button class="btn btn-outline-light project-btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    BMI Calculator App
+                  </button>
+                
+              </div>
+          <!-- Description -->
+              <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body project-desc">
+                  <div class="proj-mentor" >Team Size: 1</div>
+                  <div class="proj-mentor" >Key Skills: Flutter | Dart | Android Development</div><hr>
+                  A simple BMI Calculator app that recommends a workout schedule based on your BMI index. <br> <a href="https://play.google.com/store/apps/details?id=com.camen.bmicalculator">Download from Play Store</a>
+                </div>
+              </div>
+            
+            </div>
+
+             <!-- Project 3 -->
+             <div class="card">
+              <div class="card-header" id="heading3"> 
+                
+                  <button class="btn btn-outline-light project-btn " type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    Project #3
+                  </button>
+                
+              </div>
+          <!-- Description -->
+              <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample">
+                <div class="card-body project-desc">
+                  A simple BMI Calculator app that recommends a workout schedule based on your BMI index. <br> <a href="https://play.google.com/store/apps/details?id=com.camen.bmicalculator">Download from Play Store</a>
+                </div>
+              </div>
+            
+            </div>
+
+
+             <!-- Project 2 -->
+             <div class="card">
+              <div class="card-header" id="heading4"> 
+                
+                  <button class="btn btn-outline-light project-btn " type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    Project #4
+                  </button>
+                
+              </div>
+          <!-- Description -->
+              <div id="collapse4" class="collapse " aria-labelledby="heading4" data-parent="#accordionExample">
+                <div class="card-body project-desc">
+                  A simple BMI Calculator app that recommends a workout schedule based on your BMI index. <br> <a href="https://play.google.com/store/apps/details?id=com.camen.bmicalculator">Download from Play Store</a>
+                </div>
+              </div>
+            
+            </div>
+
+            
+
+
+
+
+
+          </div>
+
+        </div> 
+        </div>
+
+
+
+
+    <!-- Filler -->
+    <div style="height: 1500px;"></div>
+
+
+
+    <!-- FOOTER -->
+    <div class="shadow p-3" id="myfooter">
+        <h2 class="display-5" >About This Website</h2>
+        <p>This website is entired developed by me. I have made use of Bootstrap 4, Google Fonts.</p>
+        <h5>SOCIAL</h5>
+        <div id="social-links">
+          <a href="https://in.linkedin.com/in/vaibhav-biturwar-b97b3a169" data-toggle="tooltip" title="Linkedin"  target="_blank"><img class="social-image" src="./images/linkedin.png"></a>
+          <a href="https://github.com/VaibhavBiturwar" data-toggle="tooltip" title="Github"  target="_blank"><img class="social-image" src="./images/github.png"></a>
+          <a href="https://www.facebook.com/vashisht.biturwar" data-toggle="tooltip" title="Facebook"  target="_blank"><img class="social-image" src="./images/facebook.png"></a>
+          <a href="https://www.instagram.com/_.vki/" data-toggle="tooltip" title="Instagram"  target="_blank"><img class="social-image" src="./images/instagram.png"></a>
+          <a href="https://twitter.com/vashishtVB" data-toggle="tooltip" title="Twitter"  target="_blank"><img class="social-image" src="./images/twitter.png"></a>
+          <a id="send-mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=vbiturwar.35@gmail.com" data-toggle="tooltip" title="Send Email "  target="_blank" > <img class="social-image"  src="./images/mail.png"></a>
+        </div>
+        
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      // TOOLTIPS
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View CV</title>
+    <link rel="icon" href="./images/logo.png">
+
+     <!-- FONT ROBOTO -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+     
+     <!-- BOOTSTRAP -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="./css/resume-style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+       <div class="container head-container">
+          <div class="row">
+            <div class="col-lg-6">
+                <p class="roboto-font heading">My Portfolio</p>
+            </div>
+            <div class="mr-auto"></div>
+            <div class="col-lg-6">
+                <p class="roboto-font notice">*These details will not be compromised under any circumstances</p>
+            </div>
+          </div>
+       </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row form-content">
+                <!-- IMAGE -->
+                <div class="col-lg-6 	d-none d-sm-block">
+                    <img src="./images/emoji2s.png" alt="Thank You" class="img-fluid welcome-image">
+                </div>
+                <!-- FORM -->
+                <div class="col-lg-6">
+                    <div class="form-title">View CV</div>
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputName">Name*</label>
+                            <input type="text" class="form-control" id="name" required onkeypress="return (event.charCode > 64 && 
+                            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ||event.charCode==32">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputCompany">Company(Optional)</label>
+                            <input type="text" class="form-control" id="company" placeholder="">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputEmail">Email*</label>
+                          <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputmobile">Mobile(Optional)</label>
+                              <input type="text" class="form-control" id="mobile" maxlength="10" onkeypress="return (event.charCode > 47 && 
+                              event.charCode < 58)">
+                            </div>
+                          </div>
+            
+                        <button type="submit" class="btn button-resume-download roboto-font" onclick="check()">View</button>
+                      </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 500px;"></div>
+
+    
+    <!-- FOOTER -->
+    <div class="shadow p-3" id="myfooter">
+      <h2 class="display-4" >About This Website</h2>
+      <p>This website is entired developed by me. I have made use of Bootstrap 4, Google Fonts.</p>
+      <h5>SOCIAL</h5>
+      <div id="social-links">
+        <a href="https://in.linkedin.com/in/vaibhav-biturwar-b97b3a169" data-toggle="tooltip" title="Linkedin"><img class="social-image" src="../images/linkedin.png"></a>
+        <a href="https://github.com/VaibhavBiturwar" data-toggle="tooltip" title="Github"><img class="social-image" src="../images/github.png"></a>
+        <a href="https://www.facebook.com/vashisht.biturwar" data-toggle="tooltip" title="Facebook"><img class="social-image" src="../images/facebook.png"></a>
+        <a href="https://www.instagram.com/_.vki/" data-toggle="tooltip" title="Instagram"><img class="social-image" src="../images/instagram.png"></a>
+        <a href="https://twitter.com/vashishtVB" data-toggle="tooltip" title="Twitter"><img class="social-image" src="../images/twitter.png"></a>
+        <a id="send-mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=vaibhavbiturwar@gmail.com" data-toggle="tooltip" title="Send Email " > <img class="social-image"  src="../images/mail.png"></a>
+      </div>
+
+    <!-- credits -->
+      
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+
+      function check(){ 
+          var fname = document.getElementById("name").value;
+            if(fname == "")
+              alert("Name Required");
+            else{
+              var email = document.getElementById("email").value;
+              if(email == "")
+                alert("Email Required");
+            }
+          console.log(fname,email);
+          
+          var company = document.getElementById("company").value;
+
+          var mobile = document.getElementById("mobile").value;
+            
+          console.log(fname,email,company,mobile);
+
+          if( fname && email ){
+            window.history.back();
+            window.open("./Vaibhav-Biturwar.pdf");
+          }
+
+      }
+    
+    </script>
+
+    
+</body>
+</html>
