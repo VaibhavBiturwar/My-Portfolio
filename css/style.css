@@ -49,7 +49,6 @@ a.nav-link:hover{
     margin: 5px;
 }
 
-
 .button-resume{
     font-family: 'roboto';
     margin-top: 20px;
@@ -68,6 +67,15 @@ a.nav-link:hover{
     transform: scale3d(1.1,1.1,1);
 }
 
+#welcome-row{
+    padding-top: 10rem;
+}
+
+@media (max-width: 993px){
+   #welcome-row{
+          padding-top: 1.5rem;
+   } 
+}
 
 
 /* TECHNOLOGIES ______________________________*/
