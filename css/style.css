@@ -2,6 +2,9 @@ body{
     background: url(../images/Desktop.png);
 }
 
+html {
+    scroll-behavior:smooth;
+}
 
 .roboto-font{
     font-family: 'Roboto',cursive;
@@ -73,7 +76,7 @@ a.nav-link:hover{
 
 @media (max-width: 993px){
    #welcome-row{
-          padding-top: 1.5rem;
+          padding-top: 2rem;
    } 
 }
 
