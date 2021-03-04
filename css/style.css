@@ -174,7 +174,6 @@ a.nav-link:hover{
 #myfooter{
     bottom: 0;
     width: 100%;
-    /* background-color: black; */
     background: linear-gradient(90deg,#4458dc94 0% , #844feea6 100%);
     color: black;
     text-align: center;
@@ -184,4 +183,14 @@ a.nav-link:hover{
     margin: 15px;
     height: 30px;
     width: 30px;
+}
+
+#suggestion{
+    color: rgb(34, 34, 34);
+    /* color: rgb(255, 0, 0); */
+}
+
+#cc{
+    font-weight: lighter;
+    color: rgb(34, 34, 34);
 }
