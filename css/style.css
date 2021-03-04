@@ -86,8 +86,15 @@ a.nav-link:hover{
 /* TECHNOLOGIES ______________________________*/
 .heading{
    font-size: 3rem;
-   color: #000000; 
+   color:#854fee; 
    margin: 2rem auto;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 2rem;
+   font-weight: 400;
+   text-align: center;
+
+
+
 }
 
 #technologies{
@@ -134,6 +141,7 @@ a.nav-link:hover{
     padding-top: 5rem;
 }
 
+
 .card-header{
     background-color: transparent;
     padding: 0rem;
@@ -149,15 +157,14 @@ a.nav-link:hover{
 }
 
 .btn-outline-light{
-    color: #854fee;
+    color: black;
     border-color: transparent;
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.btn-outline-light:hover{
-    color: black;
-    background: transparent;
+.btn-outline-light:focus{
+    color: #854fee;
 }
 
 
