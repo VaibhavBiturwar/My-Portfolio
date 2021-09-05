@@ -356,12 +356,12 @@
             
             </div>
             <div class="modal-body">
-              Please scan this QR code from your mobile device to get redirected to this page.
-              <img src="./images/Portfolio-QR.png" />
+              Please scan this QR code from your mobile device to get redirected to this page.<br><br>
+              <img id="modal-image" src="./images/Portfolio-QR.png" />
             </div>
             <div class="modal-footer">
                 
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.open('', '_self', ''); window.close();">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.open('', '_self', ''); window.close();">Close This Window</button>
             
             </div>
           </div>
@@ -377,6 +377,7 @@
     <script type="text/javascript">
       // TOOLTIPS
 
+      // UNCOMMENT FOR DEPLOYMENT
       if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
           // true for mobile device
       }else{
