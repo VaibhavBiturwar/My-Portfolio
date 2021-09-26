@@ -16,6 +16,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- WordCloud -->
+    <link rel="stylesheet" type="text/css" href="./css/jqcloud.css" />
+
+
+
 </head>
 <body>
     
@@ -85,108 +90,17 @@
     <!-- TECHNOOGIES -->
     <div id="technologies"></div>  <!--Filler-->
       
-      <div class="technologies col-lg-10" >
-        <div class="container" >
+    <div class="technologies col-lg-10" >
+      <div class="container" >
+      
+        <h1 class="heading">Skills</h1>
+
         
-          <h1 class="heading">Skills</h1>
+    <div id="wordcloud"></div>
 
-
-          <!-- Row 1 -->
-          <div class="row">
-            <!-- Card ! -->
-            <div class="card  mb-4 tech_card" >
-              <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
-                <p class="card-text "> Flutter (Android) </p>
-              </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="card  tech_card mb-4" >
-              <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                <p class="card-text "> Python </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card tech_card mb-4" >
-              <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                <p class="card-text "> Core Java (J2SE) </p>
-              </div>
-            </div>
-
-            </div>
-
-
-          <!-- Row 2 -->
-            <div class="row">
-              <!-- Card ! -->
-              <div class="card  mb-4 tech_card" >
-                <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
-                  <p class="card-text "> C </p>
-                </div>
-              </div>
-              
-              <!-- Card 2 -->
-              <div class="card  tech_card mb-4" >
-                <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                  <p class="card-text "> C++ </p>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="card tech_card mb-4" >
-                <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                  <p class="card-text "> HTML, CSS, JAVASCRIPT, PHP </p>
-                </div>
-              </div>
-
-              </div>
-
-          <!-- Row 3 -->
-            <div class="row">
-              <!-- Card ! -->
-              <div class="card  mb-4 tech_card" >
-                <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
-                  <p class="card-text "> Bootstrap </p>
-                </div>
-              </div>
-              
-              <!-- Card 2 -->
-              <div class="card  tech_card mb-4" >
-                <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                  <p class="card-text "> MySQL , NoSQL </p>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="card tech_card mb-4" >
-                <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                  <p class="card-text "> Git </p>
-                </div>
-              </div>
-
-              </div>
-
-          <!-- Row 4 -->
-            <div class="row">
-              <!-- Card ! -->
-              <div class="card  mb-4 tech_card" >
-                <div class="card-body"  style="padding: 1.25rem 1rem 1.25rem 1rem ;" >
-                  <p class="card-text "> Figma </p>
-                </div>
-              </div>
-              
-              <!-- Card 2 -->
-              <div class="card  tech_card mb-4" >
-                <div class="card-body" style="padding: 1.25rem 1rem 1.25rem 1rem ;">
-                  <p class="card-text "> Adobe Photoshop </p>
-                </div>
-              </div>
-
-              </div>
-
-          </div>
         </div>
+      </div>
+    
 
     
 <!-- --------------------------------------------------------------------------------------- -->
@@ -445,6 +359,41 @@
       $('#element').toast('show')
 
   </script>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="./css/jqcloud-1.0.4.js"></script>
+<script type="text/javascript">
+  
+  var word_array = [
+        {text: "Flutter(Android)", weight: 10},
+        {text: "Python", weight: 9},
+        {text: "C", weight: 8},
+        {text: "C++", weight: 8},
+        {text: "Core Java (J2SE)", weight: 9},
+        {text: "Kotlin", weight: 7},
+        {text: "HTML", weight: 7},
+        {text: "CSS", weight: 7},
+        {text: "JAVASCRIPT", weight: 7},
+        {text: "PHP", weight: 7},
+        {text: "MySQL", weight: 8},
+        {text: "NoSQL", weight: 8},
+        {text: "Git", weight: 7},
+        {text: "Figma", weight: 9},
+        {text: "Adobe Photoshop", weight: 9},
+    
+  ];
+
+  
+
+  $(function() {
+    $("#wordcloud").jQCloud(word_array , {
+      autoresize: true,
+    });
+  });
+</script>
+
+
 
 
 </body>

@@ -83,18 +83,20 @@ a.nav-link:hover{
 }
 
 
-/* TECHNOLOGIES ______________________________*/
+/* SKILLS ______________________________*/
+#wordcloud{
+    /* width: 100%; */
+    height: 500px;
+}
+
 .heading{
    font-size: 3rem;
    color:#854fee; 
-   margin: 2rem auto;
+   /* margin: 2rem auto; */
    font-family:Georgia, 'Times New Roman', Times, serif;
-   margin-bottom: 2rem;
+   /* margin-bottom: 2rem; */
    font-weight: 400;
    text-align: center;
-
-
-
 }
 
 #technologies{
@@ -107,32 +109,12 @@ a.nav-link:hover{
     margin: auto;
     padding: 2rem;
     border-radius: 1rem;
-    /* background-color: rgba(247, 247, 247, 0.5); */
-    background-color: rgba(48, 176, 250, 0.068);
-    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.05);
+    background-color: rgba(247, 247, 247, 0.5);
+    box-shadow: 0px 10px 30px rgba(112, 105, 139, 0.05);
     backdrop-filter: blur(2px);    
-
 }
 
-.tech_card{
-    font-family: 'roboto';
-    border-radius: 4px;
-    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.158);
 
-    background-color:rgba(250, 250, 250, 0.5);
-    color: black;
-    margin:  auto;
-    margin-top: 0.5rem;
-}
-
-.tech_card:hover{
-    background-clip: padding-box;
-    transform: scale3d(1.1,1.1,1.1);
-    transition-duration: 0.5s;
-    font-weight: 500;
-    color: #854fee;
-    background-color:rgba(255, 255, 255, 0.8);
-}
 
 
 /* Projects  ______________________________*/
