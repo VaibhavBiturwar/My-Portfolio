@@ -50,6 +50,9 @@ a.nav-link:hover{
 
 
 /* Welcome Area ______________________________ */
+.welcome{
+    /* margin-top: 0.5rem; */
+}
 .welcome-img{
     margin: 5px;
 }
