@@ -4,6 +4,7 @@ html {
 
 body{
     background: url(../images/Desktop.png);
+    position: relative;
 }
 
 
@@ -102,7 +103,7 @@ a.nav-link:hover{
 
 #technologies{
     width: auto; 
-    height: 6rem;
+    height: 7rem;
 }
 
 
@@ -145,6 +146,11 @@ a.nav-link:hover{
 
 /* Projects  ______________________________*/
 #projects{
+    width: auto; 
+    height: 6rem;
+}
+
+#projects1{
     margin: 3rem auto;
     padding-top: 5rem;
 }
