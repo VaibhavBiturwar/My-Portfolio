@@ -88,9 +88,12 @@ a.nav-link:hover {
 
 /* Experience ______________________________*/
 #experience {
-  margin-top: 20rem;
+  width: auto;
+  height: 7rem;
+}
+
+#expContainer {
   padding: 2rem;
-  padding-top: 5rem;
 }
 
 #expTitle {
