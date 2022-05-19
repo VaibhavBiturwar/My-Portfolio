@@ -1,3 +1,8 @@
+:root {
+  --gradientbp: linear-gradient(90deg, #4458dcc5 0%, #844feeb2 100%);
+  --gradientexp: linear-gradient(90deg, #cbb4d4 0%, #8465D5 100%);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,6 +54,7 @@ a.nav-link:hover {
 .welcome {
   /* margin-top: 0.5rem; */
 }
+
 .welcome-img {
   margin: 5px;
 }
@@ -80,10 +86,48 @@ a.nav-link:hover {
   }
 }
 
+/* Experience ______________________________*/
+#expTitle {
+  font-size: 3rem;
+  color: #854fee;
+  margin: 2rem auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+#experience {}
+
+#hLine {
+  border-bottom: 3px double rgba(128, 128, 128, 0.479);
+  border-bottom-left-radius: 80%;
+  width: 100%;
+}
+
+#expText {
+  float: right;
+  white-space: pre-wrap;
+  font-family: "roboto";
+  font-size: large;
+  color: black;
+}
+
+#expLoc {
+  color: rgb(80, 80, 80);
+}
+
+#expTime {
+  font-size: 1rem;
+  color: rgb(88, 88, 88);
+}
+
+
+
+
 /* TECHNOLOGIES ______________________________*/
 .heading {
   font-size: 3rem;
-  color: #854fee;
+  color: var(--gradientbp);
   margin: 2rem auto;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 2rem;
@@ -171,7 +215,7 @@ a.nav-link:hover {
 #myfooter {
   bottom: 0;
   width: 100%;
-  background: linear-gradient(90deg, #4458dcc5 0%, #844feeb2 100%);
+  background: var(--gradientbp);
   color: black;
   text-align: center;
 }
