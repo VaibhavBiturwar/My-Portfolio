@@ -87,6 +87,12 @@ a.nav-link:hover {
 }
 
 /* Experience ______________________________*/
+#experience {
+  margin-top: 20rem;
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
 #expTitle {
   font-size: 3rem;
   color: #854fee;
@@ -96,11 +102,9 @@ a.nav-link:hover {
   font-weight: 400;
 }
 
-#experience {}
-
 #hLine {
   border-bottom: 3px double rgba(128, 128, 128, 0.479);
-  border-bottom-left-radius: 80%;
+  border-bottom-left-radius: 60%;
   width: 100%;
 }
 
