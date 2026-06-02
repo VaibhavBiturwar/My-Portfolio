@@ -70,10 +70,9 @@ export const portfolioData = {
       "Android Development",
       "Push Notifications",
       "FastLane CI/CD",
-      "Github Actions",
       "App Store Deployment",
     ],
-    tools: ["Git", "GitHub", "Figma", "Photoshop", "VS Code"],
+    tools: ["Git", "GitHub", "Github Actions", "Figma", "Photoshop", "VS Code"],
     other: [
       "NFC Integration",
       "Hardware Wallet Integration",
