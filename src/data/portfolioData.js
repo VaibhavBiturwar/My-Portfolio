@@ -2,7 +2,7 @@
 export const portfolioData = {
   personal: {
     name: "Vaibhav Biturwar",
-    title: "React Native Developer",
+    title: "Senior Software Engineer",
     email: "vaibhavbiturwar@gmail.com",
     phone: "+91-7000839146",
     linkedin: "https://www.linkedin.com/in/vaibhav-biturwar/",
@@ -389,7 +389,7 @@ export const portfolioData = {
     },
   ],
   social: {
-    linkedin: "https://in.linkedin.com/in/vaibhav-biturwar-b97b3a169",
+    linkedin: "https://www.linkedin.com/in/vaibhav-biturwar/",
     github: "https://github.com/VaibhavBiturwar",
     twitter: "https://x.com/vaibhavbiturwar",
     email: "vaibhavbiturwar@gmail.com",
